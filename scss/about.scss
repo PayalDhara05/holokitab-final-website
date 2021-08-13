@@ -1,0 +1,504 @@
+@import "variables";
+@import "allmixin";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px; 
+}
+#birdimg 
+{
+    height:20rem;
+    width:25rem;
+    margin-top: 10rem;
+}
+.about-upper-1 
+{
+    @include flex();
+}
+.about-upper-1 h1 
+{
+    margin-top: 5rem;
+    @include subheader0();
+    color:$main;
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    margin-right: 7rem;
+}
+.about-middle 
+{
+   @include flex();
+   justify-content: space-between;
+}
+.about-middle-img 
+{
+    width:80rem;
+    height:60rem;
+}
+.about-middle-text 
+{
+    @include flex();
+    flex-direction: column;
+    margin-right: 10%;
+}
+.about-middle-two 
+{
+    margin-top: 10rem;
+    position: relative;
+    img
+    {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: -1;
+    }
+}
+.about-middle-two-title 
+{
+    text-align: center;
+}
+.about-middle-text h2:nth-child(1)
+{
+    color:#ffc95e;
+    @include subheader0();
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+.about-middle-text h2:nth-child(2)
+{
+    color:$main;
+    @include subheader0();
+    text-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+.about-middle-two-title 
+{
+    margin-bottom: 2rem;
+}
+.about-middle-two-content 
+{
+    position: absolute;
+    @include flex();
+    flex-direction: column;
+    top:30%;
+}
+.about-mid-two-incontent 
+{
+    width: 70%;
+    text-align: center;
+}
+.about-middle-two p 
+{
+    font:$large;
+}
+.about-middle-two .about-middle-two-title
+{
+    color:$main;
+    @include subheader1();
+}
+@media screen and (max-width:894px) {
+    .about-middle-two-content 
+    {
+        top:10%;
+    }
+}
+@media screen and (max-width:775px) {
+    .about-middle-two img 
+    {
+        height:40rem;
+    }
+}
+@media screen and (max-width:494px) {
+    .about-middle-text h2
+    {
+        font-size: 3.5rem!important;
+        text-align: center!important;
+    }
+    .about-upper-1 h1 
+    {
+        font-size: 3.5rem;
+        text-shadow: none;
+    }
+    .about-middle 
+    {
+        margin-top: -8rem!important;
+    }
+    #openbook1 
+    {
+        width: 30rem !important;;
+    }
+    .about-upper-img 
+    {
+        height: 20rem!important;;
+        width: 100%;
+    }
+    .about-middle-two-title
+    {
+        font-size: 3rem!important;
+    }
+    .about-mid-two-incontent 
+    {
+        width: 80%;
+        font-size: 2.5rem;
+    }
+}
+.hero  
+{
+    background-color: #813589;
+    position: relative;
+}
+.hero-container
+{
+    @include flex();
+    flex-direction: column;
+    margin-top: 10rem;
+    h2 
+    {
+        @include subheader2;
+        text-align: center;
+        color:white;
+        text-shadow: 2px 2px 1px gray;
+        margin-top: 15rem;
+    }
+    p 
+    {
+        font:$big;
+        width:70%;
+        margin-top: 7rem;
+        text-align: center;
+        color:white;
+        margin-bottom: 5rem;
+    }
+    iframe 
+    {
+        margin-top: 5rem;
+        width:100rem;
+        height:50rem;
+        border-radius: 2rem;
+    }
+}
+h3 
+{
+    text-align: center;
+    @include subheader2();
+    color:$main;
+    margin-top: 5rem;
+}
+.all-about-footer-image 
+{
+    @include flex();
+    margin-top:3rem;
+    margin-bottom: 3rem;
+}
+.all-about-footer-image img 
+{
+    padding: 1rem 2rem;
+    &:nth-child(1)
+    {
+        height:10rem;
+        width:30rem;
+        margin-bottom: -4rem;
+    }
+    &:nth-child(2)
+    {
+        height:15rem;
+        width:30rem;
+    }
+    &:nth-child(3)
+    {
+        height:17rem;
+        width:15rem;
+    }
+}
+.about-message 
+{
+    @include flex();
+    justify-content: space-evenly;
+    #parentimage1
+    {
+        border-radius: 50%;
+        width:50rem;
+        margin-top: 4rem;
+        margin-left: 10rem;
+    }
+    .about-message-image 
+    {
+        @include flex();
+        flex-direction: column;
+    }
+    #openbook1 
+    {
+        height:30rem;
+        width:50rem;
+    }
+    #smallgirl1 
+    {
+        height:30rem;
+        width:20rem;
+        position: relative;
+        right:-20rem;
+        margin-top: 2rem;
+    }
+    .about-message-content 
+    {
+        @include flex();
+        flex-direction: column;
+        margin-top: 3rem;
+        h2 
+        {
+            @include subheader2();
+            color:$main;
+            margin-bottom: 3rem;
+        }
+        p 
+        {
+            width:60%;
+            font:$bigbold;
+            color:#666666;
+            text-align: center;
+        }
+    }
+}
+@media screen and (max-width:1206px) {
+    .about-message 
+    {
+        @include flex();
+        flex-direction: column;
+        #parentimage1
+        {
+            margin-left: 0rem;
+            width: 100%;
+            height: auto;
+        }
+        #openbook1 
+        {
+            height:auto;
+            width:100%;
+        }
+        #smallgirl1 
+        {
+            height:20rem;
+            width:15rem;
+            float: right;
+            margin-top: 2rem;
+        }
+    } 
+}
+@media screen and (max-width:1110px) {
+    .about-middle
+    {
+        @include flex();
+        flex-direction: column;
+        img 
+        {
+            width:100%;
+            height: auto;
+        }
+    }
+    .all-about-footer-image 
+    {
+        flex-direction: column;
+        img 
+        {
+            margin-top: 2rem;
+        }
+    }
+}
+@media screen and (max-width:990px) {
+    .hero-container iframe 
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:876px) {
+    .about-middle-two h3 
+    {
+        margin-top: -2rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero 
+    {
+        h2 
+        {
+            font-size: 3rem;
+        }
+        p 
+        {
+            font-size: 2rem!important;
+            width:80%;
+        }
+        iframe 
+        {
+            width:100%;
+            height: auto;
+        }
+        h3 
+        {
+            font-size: 2.5rem;
+        }
+    }
+    #birdimg 
+    {
+        display: none;
+    }
+    .about-upper-img 
+    {
+        height: 50vh!important;
+    }
+    .about-upper 
+    {
+        h1 
+        {
+            left:25%;
+            top:8rem;
+        }
+    }
+        .about-message, .about-message-content 
+        {
+            h2 
+            {
+                @include subheader3();
+                text-align: center;
+            }
+            p 
+            {
+                width:90%!important;
+                font: $smallbold !important;;
+                text-align: justify!important;
+                margin-bottom: 5rem;
+            }
+        }
+}
+#appleimg
+{
+    width:30rem;
+    height:20rem;
+    margin-bottom: -22rem;
+}
+#openbook-1 
+{
+    width:30rem;
+    height:25rem;
+    float: right;
+    margin-top: -20rem;
+}
+@media screen and (max-width:1300px) {
+    #appleimg
+    {
+        width:20rem;
+        height:25rem;
+    }
+    #openbook-1 
+    {
+        width:20rem;
+        height:25rem;
+        margin-right: 2rem;
+    }
+    .all-about-footer-image 
+    {
+        @include flex();
+        margin-top:3rem;
+        margin-bottom: 10rem;
+    }
+}
+@media screen and (max-width:602px) {
+    .about-upper-1 
+    {
+        h1 
+        {
+            margin-top: 10rem;
+            text-align: center;
+            margin-left: 5rem;
+            margin-bottom: 10rem;
+        }
+        #birdimg
+        {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+        }
+    }
+}
+@media screen and (max-width:500px){
+        #smallgirl1 
+        {
+            margin-top: -5rem!important;
+            margin-right: 20rem;
+            margin-bottom: 1rem;
+        }
+        #birdimg
+        {
+            height:10rem;
+            width:10rem;
+        }
+}
+@media screen and (max-width:452px) {
+    #openbook-1 
+    {
+        margin-top: -13rem;
+    }
+    .all-about-footer-image img 
+    {
+    padding: 1rem 2rem;
+    &:nth-child(1)
+    {
+        height:7rem;
+        width:25rem;
+    }
+    &:nth-child(2)
+    {
+        height:10rem;
+        width:25rem;
+    }
+    &:nth-child(3)
+    {
+        height:15rem;
+        width:13rem;
+    }
+    }
+    .hero-container h2
+    {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        text-shadow: none;
+    }
+    .hero-container iframe 
+    {
+        width:100%;
+        height:auto;
+    }
+    .hero-container p 
+    {
+        text-align:center;
+        font-size: 1.5rem;
+        font-weight: none;
+        margin-top: 2.5rem;
+    }
+    .hero 
+    {
+        margin-top: -10rem;
+    }
+}
+@media screen and (max-width:382px) {
+    .about-middle-two img
+    {
+        height:50rem;
+    }
+}
+@media screen and (max-width:348px){
+    #smallgirl1 
+    {
+        margin-top: -5rem!important;
+        margin-right: 25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+

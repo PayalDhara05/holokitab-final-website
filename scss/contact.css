@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 10px;
+}
+
+.contact-upper {
+  background-color: #D2042D;
+  height: 38vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contactwave {
+  position: relative;
+  z-index: -1;
+}
+
+.contact-upper h1 {
+  font-size: 6.5rem;
+  letter-spacing: 0.4rem;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 2px 2px black;
+  color: white;
+  margin-top: 7rem;
+  z-index: 3;
+  position: absolute;
+}
+
+.contact-img {
+  height: 4rem;
+  width: 4rem;
+  margin: 2rem;
+}
+
+.contact-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-1 p {
+  margin: 2rem;
+  font: 2rem "Open Sans", sans-serif;
+}
+
+.location .location-title {
+  margin: 2rem;
+  margin-left: 10rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  font-family: 'Fredoka One', cursive;
+  font-weight: bolder;
+  color: #D2042D;
+}
+
+.contact-middle, .contact-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -17rem;
+}
+
+.social-media-contact .social-media-title {
+  margin: 2rem;
+  margin-left: 10rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  font-family: 'Fredoka One', cursive;
+  font-weight: bolder;
+  color: #D2042D;
+}
+
+.contact-map {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-form, form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form .contact-form-title, form .contact-form-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  font-family: 'Fredoka One', cursive;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 0rem;
+  color: #D2042D;
+}
+
+form {
+  width: 100%;
+}
+
+.contact-form input, form input, .contact-form textarea, form textarea {
+  width: 150%;
+  padding: 1rem 0.9rem;
+  margin: 1.5rem;
+  font-size: 2rem;
+}
+
+.map iframe {
+  width: 80rem;
+  height: 64rem;
+}
+
+form input:last-child, form textarea:last-child {
+  font-size: 2rem;
+  width: 20rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  border: none;
+  outline: none;
+  background-color: #D2042D;
+  margin-top: 2rem;
+  color: white;
+  -webkit-box-shadow: 2px 2px gray;
+          box-shadow: 2px 2px gray;
+  -webkit-transition: .2s smooth;
+  transition: .2s smooth;
+}
+
+form input:last-child:hover, form textarea:last-child:hover {
+  background-color: #00b894;
+  color: white;
+}
+
+#success-message {
+  background-color: #4cd137;
+  padding: 1rem 7rem;
+  font: bold 1.5rem "Open Sans", sans-serif;
+  color: #fff;
+  border-radius: 1rem;
+  display: none;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+@media screen and (max-width: 1356px) {
+  .contact-map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-form, form {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .contact-middle, .contact-map {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 808px) {
+  .contact-middle, .contact-map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-middle, .contact-map {
+    margin-top: -2rem;
+  }
+  .social-media-contact {
+    margin-right: 17rem;
+  }
+  .map iframe {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .map iframe {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-upper h1 {
+    font-size: 3.5rem;
+  }
+  .location-title {
+    font-size: 2.5rem;
+  }
+  .contact-1 p {
+    font-size: 1.5rem;
+  }
+  .contact-form-title {
+    font-size: 2.5rem;
+  }
+  .social-media-contact {
+    margin-right: 11rem;
+    width: 100%;
+  }
+  .location {
+    width: 100%;
+    margin-left: -11rem !important;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .contact-form input, form input, .contact-form textarea, form textarea {
+    width: 100%;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  #form {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .location {
+    margin-left: 0rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - HoloKitab</title>
+    <meta name="title" content="Contact Us | HoloKitab Technologies - Smart 3d  Augmented Reality Books">
+    <meta name="description" content="Are you a School/Distributor/Publisher? Partner with us and see how together, we can improve the learning ecosystem in India
+    Get in touch email: info@holokitab.in or call +91 8699646484">
+    <meta name="keywords" content="Children Books , Augmented Reality Books, Interactive Books, Children Book publishers, Best Educational Toys, Early Learning Books, AR Books , Smart Books, 3D Book, Holokitab AR Book , Startup India, Top Augmented Reality Books, Books for Kids, Top Toys for Kids. Holokitab Nunbers , HoloKitab Books, Best AR Books">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="scss/contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="scss/nav.css">
+    <link rel="stylesheet" href="scss/footer.css">
+</head>
+<body>
+    <div id="Navbar"></div>
+    <div class="contact-upper">
+        <h1>Contact Us</h1>
+    </div>
+    <img src="./img/waves/contact-wave.svg" alt="contact-wave img" class="contactwave">
+    
+    <div class="contact-middle"  data-aos="fade-down">
+    
+        <div class="location">
+            <p class="location-title">Contact us</p>
+            <div class="all-contact">
+            <div class="contact-1">
+                <img src="img/contact/home.png" alt="home-page" class="contact-img">
+                <p>425/NSG Jalandhar, Punjab 144001</p>
+            </div>
+            <div class="contact-1">
+                <img src="img/contact/phone-call.png" alt="phone-call" class="contact-img">
+                <p>+91 8699646484</p>
+            </div>
+            <div class="contact-1">
+                <img src="img/contact/email.png" alt="email" class="contact-img">
+                <p>info@holokitab.in</p>
+            </div>
+        </div>
+        </div>
+    
+        <div class="social-media-contact">
+            <p class="social-media-title">Follow us</p>
+            <div class="contact-1">
+                <img src="img/home/facebook.png" alt="facebook" class="contact-img">
+                <p>Facebook</p>
+            </div>
+            <div class="contact-1">
+                <img src="img/home/instagram.png" alt="instagram" class="contact-img">
+                <p>Instagram</p>
+            </div>
+            <div class="contact-1">
+                <img src="img/home/youtube.png" alt="youtube" class="contact-img">
+                <p>YouTube</p>
+            </div>
+        </div>
+    </div>
+    
+        <div class="contact-map">
+    
+            <div class="map" data-aos="fade-down-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13634.304556737765!2d75.55929322677244!3d31.315458215879325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1627108030096!5m2!1sen!2sin" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    
+            <div class="contact-form">
+                <p class="contact-form-title" data-aos="zoom-out">Bulk Order Enquiry</p>
+                <div id="error"></div>
+                <form id="form" name="google-sheet">
+                    <input type="text" id="name" name="username" placeholder="Enter name">
+    
+                    <input type="text" id="phoneno" name="phone_no" placeholder="Enter phone number">
+    
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+    
+                    <input type="text" id="org" name="Organization" placeholder="Enter Organization name" required>
+    
+                    <textarea name="message" id="message" cols="20" rows="5" placeholder="Message"></textarea>
+    
+                    <input type="submit" class="contact-btn" id="send-btn">
+                </form>
+    
+                 <div id="success-message">Submitted</div>
+    
+            </div>   
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCiw08IbwtatG_AGn3E3FPUbbcrmdaNG0aC52cg6gUQhb-oNaqETzuwhlKmvMvXU4o/exec'
+        const form = document.forms['google-sheet'];
+        const success = document.getElementById("success-message");
+    
+            form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(console.log("done"))
+                    .catch(error => console.error('Error!', error.message));
+    
+                    success.style.display="block";
+                    setTimeout(function()
+                    {
+                        success.style.display="none"
+                    },2000);
+    
+                    document.getElementById('form').reset();
+                });
+    
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+      <script src="js/common.js"></script>
+</body>
+</html>

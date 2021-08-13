@@ -1,0 +1,195 @@
+@import "variables";
+@import "allmixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px; 
+}
+.all-sample-blog 
+{
+    @include flex();
+    flex-wrap: wrap;
+}
+.card 
+{
+    padding-bottom: 1rem;
+    margin: 3rem 2rem;
+    position: relative;
+}
+.share 
+{
+    margin-right: 1rem;
+}
+.date-social 
+{
+    @include flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    i 
+    {
+        font-size: 3rem;
+    }
+    span 
+    {
+        font-size: 2rem;
+    }
+}
+#date-cal
+{
+    color:rgb(105, 214, 105);
+}
+.blogs H1 
+{
+    text-align: center;
+    letter-spacing:0.4rem;
+    @include subheader2();
+    color:$main;
+    margin-top: 10rem;
+}
+.image
+{
+    height:24rem;
+    width:25rem;
+}
+.btn-readmore 
+{
+    color:$main;
+    text-decoration: none;
+    margin-top: 2rem;
+    font:$bigbold;
+    margin-bottom: 0.2rem;
+    position: absolute;
+    transition: all .3s smooth;
+    margin-left: 1rem;
+    bottom: 0;
+}
+.btn-readmore:hover
+{
+    color:#f54d0b;
+    font-weight: bold;
+    cursor: pointer;
+}
+.date 
+{
+    float: right;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: gray;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-title 
+{
+    font:$bigbold;
+    margin-top: 3rem;
+    text-align: center;
+}
+.card-text
+{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font:$small;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    padding-left:1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    color: gray;
+}
+.card-body
+{
+    margin-left: 3rem;
+}
+.card 
+{
+    width:40rem;
+    height: 58rem;
+}
+@media screen and (max-width:879px){
+    .card 
+    {
+        width:100%;
+        height:100rem;
+    }
+    .card-text 
+    {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
+@media screen and (max-width:700px){
+    .card 
+    {
+        height:80rem;
+    }
+    .card-text 
+    {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .card 
+    {
+        height:58rem;
+    }
+    .card-text 
+    {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
+@media screen and (max-width:300px){
+    .card 
+    {
+        height:60rem;
+    }
+    .card-text 
+    {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
+}
+.author 
+{
+    @include flex();
+}
+.author h3 
+{
+    margin-bottom: -0.5rem;
+    color:gray;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.inner-date-social-1 
+{
+    @include flex();
+}
+#share-icons 
+{
+    @include flex();
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+}
+.inner-date-social-1 
+{
+    span 
+    {
+        font-size:1.5rem;
+    }
+}

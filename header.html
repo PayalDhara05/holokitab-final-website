@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloKitab - 3D Interactive textbooks</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="scss/nav.css">
+
+    <script src="js/header.js" defer></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo-section">
+            <a href="./index.html"><img src="./img/logo/logo.png" alt="holokitab-logo" id="logo-img"></a>
+            <a href="/index.html">HoloKitab</a>
+        </div>
+        <a id="open-nav" onclick="openNav()">&#9776;</a>
+        <div class="nav-section">
+          <ul>
+                <li><a href="/catalogue.html">Catalogue</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/blogs.html">Blog</a></li>
+                <button class="shop-now-btn" onclick="window.location.href='http://go.holokitab.in/amazon';">Order Now</button>
+            </ul>
+        </div>
+    </nav>
+
+    <p id="home"></p>
+
+    <div class="sidenav" id="mynav">
+        <ul>
+            <a id="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/catalogue.html" class="sub-btn">Catalogue</a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <button id="shop-now-btn-side" onclick="window.location.href='http://go.holokitab.in/amazon';" class="a-button">Order Now</button>
+        </ul>
+    </div>
+</body>
+</html>

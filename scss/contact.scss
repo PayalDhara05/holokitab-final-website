@@ -1,0 +1,255 @@
+@import "variables";
+@import "allmixin";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px; 
+}
+
+.contact-upper 
+{
+    background-color:$main;
+    height: 38vh;
+    @include flex();
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contactwave
+{
+    position: relative;
+    z-index: -1;
+}
+.contact-upper h1 
+{
+    font-size: 6.5rem;
+    letter-spacing:0.4rem;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 2px 2px black;
+    color:white;
+    margin-top: 7rem;
+    z-index: 3;
+    position: absolute;
+}
+.contact-img 
+{
+    height:4rem;
+    width: 4rem;
+    margin: 2rem;
+}
+.contact-1 
+{
+    display: flex;
+    p 
+    {
+        margin: 2rem;
+        font:$big;
+    }
+}
+.location 
+{
+    .location-title 
+    {
+        margin: 2rem;
+        margin-left: 10rem;
+        @include subheader3();
+        color:$main;
+    }
+}
+.contact-middle 
+{
+    @include flex();
+    flex-wrap: wrap;
+    margin-top: -17rem;
+}
+.social-media-contact 
+{
+    .social-media-title 
+    {
+        margin: 2rem;
+        margin-left: 10rem;
+        @include subheader3();
+        color:$main;
+    }
+}
+.contact-map 
+{
+    @extend .contact-middle;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.contact-form 
+{
+    @include flex();
+    justify-content: space-evenly;
+    flex-direction: column;
+    .contact-form-title
+    {
+        @include subheader3();
+        text-align: center;
+        margin-left: 0rem;
+        color:$main;
+    }
+}
+form 
+{
+    @extend .contact-form;
+    width: 100%;
+}
+.contact-form input 
+{
+    width: 150%;
+    padding: 1rem 0.9rem;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+.contact-form textarea
+{
+    @extend input;
+}
+.map iframe 
+{
+    width:80rem;
+    height:64rem;
+}
+form input:last-child
+{
+    font-size: 2rem;
+    width:20rem;
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    background-color:$main;
+    margin-top: 2rem;
+    color:white;
+    box-shadow: 2px 2px gray;
+    transition: .2s smooth;
+}
+form input:last-child:hover 
+{
+    background-color:$secondary;
+    color: white;
+}
+#success-message 
+{
+    background-color: #4cd137;
+    padding: 1rem 7rem;
+    font:$smallbold;
+    color:#fff;
+    border-radius: 1rem;
+    display: none;
+    transition: .3s linear;
+}
+//  *{
+//      background: #000 !important;
+//      color: #0f0 !important;
+//      outline: solid #f00 1px !important;
+//  }
+@media screen and (max-width:1356px) {
+    .contact-map 
+    {
+        @include flex();
+        flex-direction: column;
+    }
+    .contact-form 
+    {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:1080px) {
+    .contact-middle 
+    {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:808px) {
+    .contact-middle 
+    {
+        @include flex();
+        flex-direction: column;
+    }
+    .contact-middle 
+    {
+        margin-top: -2rem;
+    }
+    .social-media-contact 
+    {
+        margin-right: 17rem;
+    }
+    .map iframe 
+    {
+        width:100%;
+    }
+    .map
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:700px) {
+    .map iframe 
+    {
+        width:100%;
+    }
+    .map
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:500px){
+    .contact-upper h1 
+    {
+        font-size: 3.5rem;
+    }
+    .location-title
+    {
+        font-size: 2.5rem;
+    }
+    .contact-1 p 
+    {
+        font-size: 1.5rem;
+    }
+    .contact-form-title 
+    {
+        font-size: 2.5rem;
+    }
+    .social-media-contact 
+    {
+        margin-right: 11rem;
+        width: 100%;
+    }
+    .location 
+    {
+        width:100%;
+        margin-left: -11rem!important;
+    }
+}
+@media screen and (max-width:464px){
+    .contact-form input 
+    {
+        width:100%;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    #form 
+    {
+        margin-top: 0rem;
+    }
+}
+@media screen and (max-width:358px) {
+    .location 
+    {
+        margin-left: 0rem;
+    }
+}
