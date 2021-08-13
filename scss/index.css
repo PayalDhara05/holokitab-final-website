@@ -1887,4 +1887,10 @@ iframe {
     margin-left: 5rem !important;
   }
 }
+
+@media screen and (max-width: 647px) {
+  .container {
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=index.css.map */
