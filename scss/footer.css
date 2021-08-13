@@ -210,6 +210,10 @@ footer .contact p:nth-child(1) {
           filter: drop-shadow(3px 3px 3px black);
 }
 
+#whatsapp-img:focus {
+  outline: none !important;
+}
+
 .bottomnav1 {
   margin-top: -2rem;
   display: none;

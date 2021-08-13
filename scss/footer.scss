@@ -148,6 +148,10 @@ footer .contact p:nth-child(1)
     transform: scale(1.1);
     filter: drop-shadow(3px 3px 3px black);
 }
+#whatsapp-img:focus
+{
+    outline: none !important;
+}
 .bottomnav1 
 {
     a 
