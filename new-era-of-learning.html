@@ -17,15 +17,25 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-classic.css" />
     <link rel="stylesheet" href="scss/nav.css">
     <link rel="stylesheet" href="scss/footer.css">
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="scss/blog1.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-183711555-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-183711555-1');
+    </script>
 </head>
 <body>
     <div id="Navbar"></div>
     <section>
         <div class="blog-inner-container">
               <div class="image-container">
-                <img src="./img/visualisation.jpeg" alt="blogimage">
+                <img src="./img/blog/screentime.webp" alt="blogimage" loading="lazy">
               </div>
       
               <div class="all-blog-content">
@@ -51,7 +61,7 @@
                   <h2>Related Post</h2>
                   <div class="all-sample-blog1">
                     <div class="card1">
-                      <img src="./img/parent1.JPG" class="card-img-top image-1" alt="blog1-img">
+                      <a href="/ar-innovative-way-of-learning.html"><img src="./img/about/parents.webp" class="card-img-top image-1" alt="blog1-img" loading="lazy"></a>
                       <div class="card-body-1">
                         <div class="date-social">
                           <div class="inner-date-social-1">
@@ -82,7 +92,7 @@
 
   <script>
        $(".share").jsSocials({
-      url: "https://youtu.be/kNNQ8UQO4qA \n ",
+      url: "https://www.holokitab.in/blogs.html \n ",
       text: "HoloKitab - 3D Interactive TextBooks",
       showLabel: false,
       showCount: false,
