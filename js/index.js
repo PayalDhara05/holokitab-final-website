@@ -1,13 +1,1 @@
-var swiper = new Swiper(".mySwiper1", {
-    spaceBetween: 30,
-    loop:true,
-            autoplay:true,
-    pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-
-  
-
+var swiper=new Swiper(".mySwiper1",{spaceBetween:30,loop:!0,autoplay:!0,pagination:{el:".swiper-pagination",clickable:!0}}),i=0,images=[],time=2e3;function changeImg(){document.slide.src=images[i],i<images.length-1?i++:i=0,setTimeout("changeImg()",time)}images[0]="./img/home/customer2.webp",images[1]="./img/home/customer1.webp",window.onload=changeImg;

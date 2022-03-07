@@ -163,8 +163,8 @@ html,body
 }
 #gifimage 
 {
-    height:50rem;
-    width:50rem;
+    height: auto;
+    width: auto;
     margin-top: -1rem;
     margin-left: -2rem;
 }
@@ -726,6 +726,27 @@ html,body
     height: 100%;
     object-fit: cover;
 }
+.carousel-container
+{
+    width: 50%!important;
+    height: 100%!important;
+}
+.carousel-item img 
+{
+    width: 80%!important;
+    height: 100%!important;
+}
+// .carousel-cont 
+// {
+//     position: relative;
+// }
+.image-getnow img
+{
+    width: 80%;
+    height:60%;
+    margin-left: 3rem;
+    margin-top: 19rem;
+}
 .getnow 
 {
     @include flex();
@@ -1085,22 +1106,23 @@ iframe
   left: 0;
   font-family:  'Open Sans', sans-serif;
 }
-.page-content p {
-    font-size: 3rem;
+.page-content h1 {
     margin-bottom: 12px;
     font-family:  'Open Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: normal;
 }
 
 .page-content h1 span {
   color: #d63031;
-  font-size: 3.5rem;
+//   font-size: 3.5rem;
   font-weight: bolder;
 }
 
-.page-content h1
-{
-    font:$big;
-}
+// .page-content h1
+// {
+//     font:$big;
+// }
 
 .page-content a {
   text-decoration: none;

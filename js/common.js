@@ -1,12 +1,1 @@
-$(function()
-{
-    $("#Navbar").load("header.html");
-    $("#footer").load("footer.html");
-});
-
-AOS.init(
-    {
-        offset:200,
-        duration:1000
-    }
-  );
+$(function(){$("#Navbar").load("header.html"),$("#footer").load("footer.html")}),AOS.init({offset:200,duration:1e3});
